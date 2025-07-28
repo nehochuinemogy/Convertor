@@ -1,0 +1,616 @@
+.prompt-extralight {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.prompt-light {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Body*/
+
+/*Header*/
+header {
+    background-color: #001D4A;
+    color: white;
+    font-family: "Prompt";
+    letter-spacing: 1px;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Content name*/
+.content {
+    width: 40%;
+    border: rgb(194, 194, 194) 1px solid;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+}
+
+#first {
+    margin: 2%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    padding: 2%;
+    border: #ECA400 1px solid;
+    background-color: #ECA400;
+    color: white;
+    border-radius: 35px;
+    font-size: 20px;
+}
+
+#first:hover {
+    cursor: pointer;
+    background-color: #001D4A;
+    border-color: #001D4A;
+    transition: 0.3s ease;
+}
+
+#second {
+    margin: 2%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    padding: 2%;
+    border: #ECA400 1px solid;
+    background-color: #ECA400;
+    color: white;
+    border-radius: 35px;
+    font-size: 20px;
+
+}
+
+#second:hover {
+    cursor: pointer;
+    background-color: #001D4A;
+    border-color: #001D4A;
+    transition: 0.3s ease;
+}
+
+#third {
+    margin: 2%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    padding: 2%;
+    border: #ECA400 1px solid;
+    background-color: #ECA400;
+    color: white;
+    border-radius: 35px;
+    font-size: 20px;
+}
+
+#third:hover {
+    cursor: pointer;
+    background-color: #001D4A;
+    border-color: #001D4A;
+    transition: 0.3s ease;
+}
+
+/*Temperature*/
+.temperature {
+    border-radius: 60px;
+    margin-left: 420px;
+    gap: 20px;
+    width: 40%;
+    padding: 2%;
+    border: rgb(194, 194, 194) 1px solid;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.temperature p {
+    border: 2px rgb(194, 194, 194) solid;
+    border-radius: 40px;
+    padding: 20px;
+    width: 27%;
+    padding: 3%;
+    margin-left: 203px;
+}
+.temperature h3 {
+    font-size: 17px;
+    line-height: 15px;
+    color:#001D4A;
+}
+#id {
+    font-weight: 400;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+input[type=text] {
+    margin-bottom: 10px;
+    border: 2px rgb(194, 194, 194) solid;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+input[type=text]:focus {
+    background-color: rgb(228, 225, 225);
+}
+
+.temperature h3 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 10px;
+    color: #001D4A;
+}
+
+#celsius {
+    color: black;
+}
+
+#fahrenheit {
+    color: black;
+}
+
+#kelvin {
+    color: black;
+}
+
+#myInput {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.final_border p {
+    margin-bottom: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+}
+.final_border_01 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+   
+    
+}
+.final_border_02 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+}
+.radio_button_options {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    color: #001D4A;
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+
+#button_temperature {
+    background-color: #ECA400;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#button_temperature:hover {
+    cursor: pointer;
+    background-color: #001D4A;
+    border-color: #001D4A;
+    transition: 0.3s ease;
+}
+
+#converted_name {
+    margin-top: 0px;
+}
+
+.radio_button_options input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ECA400;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio_button_options input[type="radio"]:checked {
+    background-color: white;
+}
+
+.radio_button_options input[type="radio"]::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ECA400;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.radio_button_options input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/*Currency*/
+#photos img {
+    width: 40px;
+}
+
+#photos {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.currency {
+    border-radius: 60px;
+    margin-left: 420px;
+    gap: 20px;
+    width: 40%;
+    padding: 2%;
+    border: rgb(194, 194, 194) 1px solid;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.currency h3 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+#currencyInput {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    padding-left: 40px;
+    margin-left: 175px;
+    margin-top: 10px;
+    width: min-content;
+}
+
+.radio_button_options_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    color: #001D4A;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.radio_button_options_1 input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ECA400;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+}
+
+.radio_button_options_1 input[type="radio"]:checked {
+    background-color: white;
+}
+
+.radio_button_options_1 input[type="radio"]::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ECA400;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.radio_button_options_1 input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#to {
+    margin-top: -180px;
+    margin-bottom: 20px;
+}
+
+.radio_button_options_01 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    color: #001D4A;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+.radio_button_options_01 input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ECA400;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+}
+
+.radio_button_options_01 input[type="radio"]:checked {
+    background-color: white;
+}
+
+.radio_button_options_01 input[type="radio"]::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ECA400;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.radio_button_options_01 input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#button_currency {
+    background-color: #ECA400;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#button_currency:hover {
+    cursor: pointer;
+    background-color: #001D4A;
+    border-color: #001D4A;
+    transition: background-color 0.3s ease;
+}
+
+#button_currency_01 {
+    text-align: center;
+    margin-top: -150px;
+}
+
+#result_01 {
+    border: 2px rgb(194, 194, 194) solid;
+    border-radius: 40px;
+    padding: 20px;
+    width: 27%;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+/*Speed*/
+.speed {
+    border-radius: 60px;
+    margin-left: 420px;
+    gap: 20px;
+    width: 40%;
+    padding: 2%;
+    border: rgb(194, 194, 194) 1px solid;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.speed h3 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.speed h3 {
+    font-size: 17px;
+    line-height: 20px;
+    color:#001D4A;
+}
+#speedInput_01 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#speedInput_02 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.inputs_speed {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.options_value {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+#distance {
+    margin-top: 15px;
+}
+
+.speed_final {
+    display: flex;
+
+}
+
+#result_02 {
+    border: 2px rgb(194, 194, 194) solid;
+    border-radius: 40px;
+    padding: 20px;
+    width: 27%;
+    padding: 20px;
+    margin-left: 205px;
+    margin-top: 10px;
+}
+
+.options_value select {
+    padding: 4px;
+    font-size: 16px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    border-radius: 15px;
+    border: 1px solid #ECA400;
+    background-color: #ECA400;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.options_value select:focus {
+    outline: none;
+    border-color: #001D4A;
+    box-shadow: 0 0 5px #001D4A;
+}
+
+.options_value select option {
+    font-size: 14px;
+    background: white;
+    color: #001D4A;
+}
+
+.options_value select:hover {
+    background-color: #001D4A;
+}
+
+#button_speed {
+    background-color: #ECA400;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#button_speed:hover {
+    cursor: pointer;
+    background-color: #001D4A;
+    border-color: #001D4A;
+    transition: 0.3s ease;
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: #001D4A;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    color: white;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    padding-left: 30%;
+}
+
+.aside3 img {
+    width: 30px;
+    
+    padding:20px;
+
+}
+.aside3 {
+    padding-right: 40px;
+
+}
+
+footer h2 {
+    color: white;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 30%;
+    padding-bottom: 20px;
+}
+
+footer h1 {
+    color: white;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.asides {
+    display: flex;
+    justify-content: space-between;
+
+}

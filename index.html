@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Convertor.ie</h1>
+    </header>
+    <main>
+        <div class="content">
+            <button type="button" id="first">Temperature</button>
+            <button type="button" id="second">Currency</button>
+            <button type="button" id="third">Speed</button>
+        </div>
+        <div class="temperature">
+            <h3>Enter </h3>
+            <input type="text" id="myInput" placeholder="Enter temperature here">
+            <form action="input">
+                <div class="radio_button_options">
+                    <input type="radio" id="c" name="degree" value="celcius" />
+                    <label for="celcius">Celsius</label>
+
+                    <input type="radio" id="f" name="degree" value="fahrenheit" />
+                    <label for="fahrenheit">Fahrenheit</label>
+
+                    <input type="radio" id="k" name="degree" value="kelvin" />
+                    <label for="kelvin">Kelvin</label>
+                </div>
+            </form>
+            <div>
+                <button type="button" id="button_temperature">Convert</button>
+            </div>
+            
+            <div class="final_border">
+                <h3 id="converted_name">Converted</h3>
+                <p id="celsius"></p>
+                <p id="fahrenheit"></p>
+                <p id="kelvin"></p>
+            </div>
+            <h3 id = "id"> Formulas to calculate degrees:</h3>
+            <h3>From Celcius to Kelvin = °C+273.15</h3>
+            <h3>From Fahrenheit to Kelvin = 5/9 * (°F-32) + 273.15</h3>
+            <h3>From Celcius to Fahrengheit = (°C * 9/5) + 32</h3>
+            <h3>From Kelvin to Fahrengheit = (K - 273.15) * 9/5 + 32</h3>
+            <h3>From Fahrengheit to Celcius = (°F - 32) * 5/9</h3>
+            <h3>From Kelvin to Celcuius = K° -273.15</h3>
+        </div>
+
+        <div class="currency">
+            <div class="info">
+                <h3>Enter </h3>
+                <input type="text" id="currencyInput" placeholder="Enter currency here">
+            </div>
+            <form action="input">
+                <div class="radio_button_options_1">
+                    <div class="hr">
+                        <input type="radio" id="h" name="currency1" value="hryvnia" />
+                        <label for="hryvnia">UAH - Ukranian Hryvnia</label>
+                        <div id="photos">
+                            <img src="UKR.png">
+                        </div>
+                    </div>
+                    <div class="hr">
+                        <input type="radio" id="d" name="currency1" value="dollar" />
+                        <label for="dollar">USD US-Dollar</label>
+                        <div id="photos">
+                            <img src="USA.png">
+                        </div>
+                    </div>
+                    <div class="hr">
+                        <input type="radio" id="e" name="currency1" value="euro" />
+                        <label for="euro">EUR-Euro</label>
+                        <div id="photos">
+                            <img src="EU.png">
+                        </div>
+                    </div>
+                    <div class="hr">
+                        <input type="radio" id="p" name="currency1" value="pound" />
+                        <label for="pound">GBP - British Pound</label>
+                        <div id="photos">
+                            <img src="UK.png">
+                        </div>
+                    </div>
+                </div>
+
+                <form action="input">
+                    <h3 id="to">To</h3>
+                    <div class="radio_button_options_01">
+                        <div class="hr">
+                            <input type="radio" id="h" name="currency2" value="hryvnia" />
+                            <label for="hryvnia">UAH - Ukranian Hryvnia</label>
+                            <div id="photos">
+                                <img src="UKR.png">
+                            </div>
+                        </div>
+                        <div class="hr">
+                            <input type="radio" id="d" name="currency2" value="dollar" />
+                            <label for="dollar">USD US-Dollar</label>
+                            <div id="photos">
+                                <img src="USA.png">
+                            </div>
+                        </div>
+                        <div class="hr">
+                            <input type="radio" id="e" name="currency2" value="euro" />
+                            <label for="euro">EUR-Euro</label>
+                            <div id="photos">
+                                <img src="EU.png">
+                            </div>
+                        </div>
+                        <div class="hr">
+                            <input type="radio" id="p" name="currency2" value="pound" />
+                            <label for="pound">GBP - British Pound</label>
+                            <div id="photos">
+                                <img src="UK.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div id="button_currency_01">
+                    <button type="button" id="button_currency">Convert</button>
+                    
+                    <div class="final_border_01">
+                        <h3 id="converted_name">Converted</h3>
+                        <p id="result_01"></p>
+                    </div>
+                </div>
+        </div>
+        <div> 
+
+
+            <div class="speed">
+                <h3>Enter </h3>
+                <div class="speed_final">
+                    <div class="options_value">
+                        <select id="distance" name="distance">
+                            <option value="m">Meters</option>
+                            <option value="k">Kilometers</option>
+                            <option value="i">Inches</option>
+                            <option value="mi">Miles</option>
+                        </select>
+                        <select id="time" name="time">
+                            <option value="s">Seconds</option>
+                            <option value="h">Hours</option>
+                            <option value="min">Minutes</option>
+                        </select>
+                    </div>
+
+                    <div class="inputs_speed">
+                        <input type="text" id="speedInput_01" placeholder="Enter the distance here">
+                        <input type="text" id="speedInput_02" placeholder="Enter the time here">
+                    </div>
+                </div>
+                <button type="button" id="button_speed">Convert</button>
+               <div class = "01">
+                <div class="final_border_02">
+                    <h3 id="converted_name">Converted</h3>
+                    <p id="result_02"></p>
+                </div>
+                <h3 id = "id"> Formula to calculate the speed value:</h3>
+                <h3>Distance / Time</h3>
+            </div>
+        
+    </main>
+
+    <footer>
+        <h1>Convertor.ie</h1>
+        <div class="asides">
+            <div class="aside">
+                <h2>Information</h2>
+                <h3>About us</h3>
+                <h3>Community</h3>
+                <h3>Careers</h3>
+            </div>
+
+            <div class="aside2">
+                <h2>Contact</h2>
+                <h3>About </h3>
+                <h3>Community</h3>
+                <h3>Careers</h3>
+            </div>
+
+            <div class = "aside3">
+                <h2>Sofiia Vedenieva/3150837</h2>
+                <h3>+380-66-36-81-947</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
